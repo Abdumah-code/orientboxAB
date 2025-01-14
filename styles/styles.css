@@ -1,13 +1,20 @@
 /* Variables */
 /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures all elements respect container width */
+}
+
 body {
   font-family: "Cairo", sans-serif;
   background-color: #FFFFF0;
   color: #213037;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: right;
   direction: rtl;
+  max-width: 100%; /* Prevent horizontal overflow */
 }
 
 header {
@@ -23,10 +30,9 @@ header .logo img {
 }
 header h1 {
   font-size: 1.8rem;
-  margin: 0;
 }
 header #search-bar {
-  width: 90%;
+  width: 90%; /* Ensures search bar fits within the body */
   margin: 1rem auto;
   padding: 0.5rem;
   border: 1px solid #213037;
@@ -41,7 +47,7 @@ section {
   border-radius: 8px;
   background-color: #FDFFA5;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 95%; /* Keep sections within screen width on mobile */
+  max-width: 95%; /* Ensures sections stay within the viewport */
 }
 section h2 {
   font-size: 1.4rem;
@@ -81,7 +87,8 @@ form button:hover {
 
 /* Slider Styles */
 #serving-slider {
-  width: 100%;
+  width: 100%; /* Ensures slider fits within its container */
+  margin: 0.5rem 0; /* Adds spacing to prevent overlap */
 }
 
 #slider-value {
@@ -133,15 +140,14 @@ footer {
     font-size: 0.9rem;
   }
   #search-bar {
-    width: 95%; /* Adjust width for smaller screens */
-  }
-  button.filter-btn {
-    font-size: 0.9rem;
-    padding: 0.5rem;
+    width: 95%;
   }
   section {
-    margin: 0.5rem auto; /* Reduce margins for smaller screens */
+    margin: 0.5rem auto;
     padding: 0.8rem;
+  }
+  #serving-slider {
+    width: 100%; /* Ensures slider adapts to screen width */
   }
 }
 @media (max-width: 480px) {
@@ -153,5 +159,8 @@ footer {
   }
   section {
     padding: 0.5rem;
+  }
+  #serving-slider {
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
