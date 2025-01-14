@@ -101,6 +101,54 @@ form {
   }
 }
 
+/* Search Bar */
+#search-bar {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: 1px solid $accent-color;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Filter Buttons */
+  .filter-btn {
+    background-color: $secondary-color;
+    color: $accent-color;
+    border: 1px solid $primary-color;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: $primary-color;
+      color: $background-color;
+    }
+  }
+  
+  /* Step-by-Step Instructions */
+  #instructions-list {
+    list-style: decimal;
+    margin: 1rem 0;
+    padding: 0;
+    li {
+      margin: 0.5rem 0;
+      color: $accent-color;
+    }
+  }
+  
+  /* Serving Slider */
+  #serving-slider {
+    width: 100%;
+  }
+  
+  #slider-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $primary-color;
+  }
+  
+
 /* Tips Section */
 #cooking-tips {
   background-color: $primary-color;

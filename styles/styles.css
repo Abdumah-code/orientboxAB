@@ -85,6 +85,52 @@ form button:hover {
   color: #213037;
 }
 
+/* Search Bar */
+#search-bar {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 1px solid #213037;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Filter Buttons */
+.filter-btn {
+  background-color: #FDFFA5;
+  color: #213037;
+  border: 1px solid #eda367;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filter-btn:hover {
+  background-color: #eda367;
+  color: #FFFFF0;
+}
+
+/* Step-by-Step Instructions */
+#instructions-list {
+  list-style: decimal;
+  margin: 1rem 0;
+  padding: 0;
+}
+#instructions-list li {
+  margin: 0.5rem 0;
+  color: #213037;
+}
+
+/* Serving Slider */
+#serving-slider {
+  width: 100%;
+}
+
+#slider-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #eda367;
+}
+
 /* Tips Section */
 #cooking-tips {
   background-color: #eda367;

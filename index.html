@@ -12,7 +12,15 @@
       <img src="assests/logo-square.png" alt="Orient Box Logo">
     </div>
     <h1>وصفاتك بالحجم المطلوب</h1>
+    <input type="text" id="search-bar" placeholder="ابحث عن وصفة..." />
   </header>
+
+  <section id="recipe-filters">
+    <h2>اختر فئة الوصفات</h2>
+    <button class="filter-btn" data-category="vegetarian">نباتي</button>
+    <button class="filter-btn" data-category="vegan">نباتي صرف</button>
+    <button class="filter-btn" data-category="quick">سريع</button>
+  </section>  
 
   <main>
     <section id="recipe-converter">
@@ -26,8 +34,9 @@
           <option value="tabbouleh">تبولة</option>
         </select>
 
-        <label for="desired-servings">عدد الأشخاص المطلوب:</label>
-        <input type="number" id="desired-servings" min="1" required>
+        <label for="serving-slider">عدد الأشخاص:</label>
+        <input type="range" id="serving-slider" min="1" max="150" value="1">
+        <span id="slider-value">1</span>
 
         <button type="submit">احسب</button>
       </form>
@@ -40,6 +49,11 @@
       </div>
     </section>
 
+    <section id="step-by-step">
+        <h2>الخطوات</h2>
+        <ol id="instructions-list"></ol>
+      </section>      
+
     <section id="cooking-tips">
       <h2>نصائح الطبخ</h2>
       <p id="tips"></p>
@@ -50,6 +64,6 @@
     <p>© 2025 Orient Box</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
