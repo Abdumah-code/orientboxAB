@@ -1,0 +1,118 @@
+/* Variables */
+$primary-color: #eda367;
+$secondary-color: #FDFFA5;
+$background-color: #FFFFF0;
+$accent-color: #213037;
+$text-color: #213037;
+$font-family: 'Cairo', sans-serif;
+
+/* Global Styles */
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  direction: rtl;
+}
+
+header {
+  background-color: $primary-color;
+  color: $background-color;
+  text-align: center;
+  padding: 1rem;
+
+  .logo img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+/* Section Styles */
+section {
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: $secondary-color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 1.5rem;
+    color: $accent-color;
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  label {
+    font-weight: bold;
+    color: $accent-color;
+  }
+
+  select, input, button {
+    padding: 0.75rem;
+    border: 1px solid $accent-color;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: $background-color;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+/* Recipe Results */
+#recipe-results {
+  background-color: $background-color;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0.5rem 0;
+      color: $accent-color;
+    }
+  }
+}
+
+/* Tips Section */
+#cooking-tips {
+  background-color: $primary-color;
+  color: $background-color;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: $accent-color;
+  color: $background-color;
+  text-align: center;
+  padding: 1rem;
+}
