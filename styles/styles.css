@@ -163,4 +163,41 @@ footer {
   #serving-slider {
     width: 100%;
   }
+}
+/* Media Query for Landscape Orientation */
+@media (orientation: landscape) and (max-width: 768px) {
+  header {
+    padding: 0.5rem;
+  }
+  header h1 {
+    font-size: 1.2rem;
+  }
+  header #search-bar {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+  section {
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    max-width: 90%; /* Ensure sections fit horizontally */
+  }
+  section h2 {
+    font-size: 1.2rem;
+  }
+  form {
+    gap: 0.5rem;
+  }
+  form label {
+    font-size: 0.9rem;
+  }
+  form select, form input, form button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  #serving-slider {
+    width: 100%; /* Fit slider to available width */
+  }
+  footer {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
